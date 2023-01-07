@@ -25,6 +25,10 @@
     .media{
         text-align: left;
     }
+    .disciplina{
+        background-color: #ffffff;
+        color: #000000;
+    }
 </style>
 <body>
     <table>
@@ -42,7 +46,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Exatas</td>
+                <th rowspan="4" class="disciplina" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>7</td>
                 <td>7</td>
@@ -68,10 +72,10 @@
             </tr>
             <tr>
                 <th colspan="4" class="media" scope="row">Media de Exatas</th>
-                <th scope="row">7</th>
+                <th>7</th>
             </tr>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <th rowspan="2" class="disciplina" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>7</td>
                 <td>7</td>
@@ -85,7 +89,7 @@
             </tr>
             <tr>
                 <th colspan="4" class="media" scope="row">Média de Humanas</th>
-                <th scope="row">7</th>
+                <th>7</th>
             </tr>
         </tbody>
     </table>
