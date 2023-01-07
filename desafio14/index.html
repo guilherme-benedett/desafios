@@ -12,24 +12,82 @@
         border-collapse: collapse;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        height: 70vh;
     }
     th, td{
         border: 1px solid #000000;
+        padding: 10px;
     }
     th{
         background-color: #0000007a;
+        color: #ffffff;
+    }
+    .media{
+        text-align: left;
     }
 </style>
 <body>
     <table>
         <thead>
             <tr>
-                <th colspan="2">Área</th>
-                <th colspan="2">Disciplina</th>
-                <th>Notas</th>
-                <th colspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Exatas</td>
+                <td>Matemática</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media" scope="row">Media de Exatas</th>
+                <th scope="row">7</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td>História</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media" scope="row">Média de Humanas</th>
+                <th scope="row">7</th>
+            </tr>
+        </tbody>
     </table>
     
 </body>
